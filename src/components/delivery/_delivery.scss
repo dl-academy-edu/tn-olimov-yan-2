@@ -1,0 +1,183 @@
+.delivery {
+    max-width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    &__img{
+        &__wrapper{
+            max-width: 335px;
+            max-height: 357px;
+        }
+    }
+    &__txt{
+        margin-right: 120px;
+    }
+    &__list{
+        margin-top: 13px;
+    }
+    &__btn{
+        position: relative;
+        margin-top: 15px;
+        padding: 0px;
+        font-family: 'Crimson Text', 'Book Antiqua', serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 32px;
+        color: #1E0606;
+        border: 0;
+        background: transparent;
+        transition: 0.4s;
+        &:hover{
+            cursor: pointer;
+            font-weight: 700;
+        }
+        &:hover::before{
+            content: '';
+            position: absolute;
+            width: 267px;
+            height: 45px;
+            top: -7px;
+            left: -20px;
+            background-color: rgba(112, 187, 220, 0.2);
+            cursor: pointer;
+            z-index: -1;
+        } 
+    
+    }
+    &__subtitle{
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 29px;
+    } 
+    &__btn_active{
+        position: relative;
+        font-weight: 700;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 267px;
+            height: 45px;
+            top: -7px;
+            left: -20px;
+            background-color: rgba(112, 187, 220, 0.2);
+            z-index: -1;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 267px;
+            height: 45px;
+            top: -7px;
+            left: -20px;
+            background-color: rgba(112, 187, 220, 0.2);
+            z-index: -1;
+        }
+    }
+    &__desc{
+        margin-top: 20px;
+        max-width: 480px;
+        &:nth-child(4){
+            margin-top: 12px;
+        }
+    }
+    &__link{
+        margin-top: 21px;
+        max-width: 92px;
+        max-height: 20px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+
+@media  (min-width: 768px) and (max-width: 1023px) {
+    .delivery{
+        margin-top: 60px;
+        min-width: 648px;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        &__text{
+            max-width: 334px;
+        }
+        &__subtitle{
+            margin-top: 0px;
+            font-size: 36px;
+            line-height: 44px;
+        }
+        &__img__wrapper{
+            max-width: 258px;
+            max-height: 512px;
+        }
+        &__btn{
+            margin-top: 15px;
+        }
+        &__list{
+            margin-top: 0px;
+        }
+        &__desc{
+            margin-top: 20px;
+            max-width: 314px;
+            &:nth-child(4){
+                margin-top: 15px;
+            }
+        }
+    }
+  }
+
+  @media (min-width: 1024px){
+    .delivery{
+        max-width: 1180px;
+        margin-top: 90px;
+        &__text{
+            max-width: 540px;
+            margin-left: 219px;
+            margin-top: 34px;
+        }
+        &__subtitle{
+            margin-top: 0px;
+            font-size: 38px;
+            line-height: 46px;
+        }
+        &__img__wrapper{
+                max-width: 380px;
+                max-height: 559px;
+        }
+        &__txt{
+            margin-right: 120px;
+        }
+        &__btn{
+            margin-top: 22px;
+            font-size: 26px;
+            line-height: 32px;
+            ::before{
+                width: 326px;
+                height: 55px;
+            }
+        }
+        &__list{
+            margin-top: 0px;
+        }
+        &__desc{
+            margin-top: 30px;
+            width: 480px;
+            font-size: 16px;
+            line-height: 22px;
+            &:nth-child(4){
+                margin-top: 15px;
+            }
+        }
+        &__link{
+            margin-top: 25px;
+            max-width: 106px;
+            padding: 9px 22px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }  
+    
+  }
+
+
+

@@ -1,0 +1,21 @@
+.bottom-raiting__star{
+    width: 14px;
+    height: 14px;
+    padding-top: 2px;
+    padding-right: 5px;    
+}
+
+.bottom-raiting__input{
+    &:focus{
+        outline: none;
+    }
+    &:focus + .footer__bottom-raiting__star .bottom-rating__svg{
+        outline-color: #000000;
+        outline-offset: 0px;
+        outline-style: auto;
+        outline-width: 0px;
+    }
+    &:checked + .bottom-raiting__star .bottom-raiting__svg{
+        fill: #C29974;
+    }
+}

@@ -1,0 +1,65 @@
+<form action="https://echo.htmlacademy.ru" method="POST" class="form-toys">
+    <div class="form-toys__wrap container">
+            <fieldset class="form-toys__field">
+                <legend class="form-toys__legend">Cost</legend>
+                <input type="range" id="cost" name="cost" min="0" max="500" class="form-toys__input_range">
+                <div class="form-toys__field__text">
+                    <span class="form-toys__field__desc">0</span>
+                    <span class="form-toys__field__desc">500</span>
+                </div>
+            </fieldset>
+            <fieldset class="form-toys__field">
+                <legend class="form-toys__legend">Color</legend>
+                <ul class="form-toys__color_list list">
+                    <li class="form-toys__color_item">
+                        <input id="check-black" type="checkbox" class="form-toys__input visually-hidden" value="Black" checked>
+                        <label for="check-black" class="form-toys__label">Black</label>
+                    </li>
+                    <li class="form-toys__color_item">
+                        <input id="check-blue" type="checkbox" class="form-toys__input  visually-hidden" value="Blue">
+                        <label for="check-blue" class="form-toys__label">Blue</label>
+                    </li>
+                    <li class="form-toys__color_item">
+                        <input id="check-green" type="checkbox" class="form-toys__input  visually-hidden" value="Green">
+                        <label for="check-green" class="form-toys__label">Green</label>
+                    </li>
+                    <li class="form-toys__color_item">
+                        <input id="check-white" type="checkbox" class="form-toys__input  visually-hidden" value="White">
+                        <label for="check-white" class="form-toys__label">White</label>
+                    </li>
+
+                </ul>
+            </fieldset>
+            <fieldset class="form-toys__field">
+                <legend class="form-toys__legend">Delivery</legend>
+                <ul class="form-toys__delivery_list list">
+                    <li class="form-toys__delivery_item">
+                        <input id="radio-free-shipping" type="radio" name="report" value="Free shipping" class="form-toys__input visually-hidden">
+                        <label for="radio-free-shipping" class="form-toys__label_delivery">Free shipping</label>
+                    </li>
+                    <li class="form-toys__delivery_item">
+                        <input id="radio-fast-shipping" type="radio" name="report" value="Fast shipping" class="form-toys__input visually-hidden" checked>
+                        <label for="radio-fast-shipping" class="form-toys__label_delivery">Fast shipping</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="form-toys__field">
+                <legend class="form-toys__legend">Amount</legend>
+                <ul class="form-toys__amount_list list">
+                    <li class="form-toys__amount_item">
+                        <input id="radio-min" type="radio" name="report-amount" value="0-5" class="form-toys__input visually-hidden" checked>
+                        <label for="radio-min" class="form-toys__label_amount">0-5</label>
+                    </li>
+                    <li class="form-toys__amount_item">
+                        <input id="radio-average" type="radio" name="report-amount" value="10-20" class="form-toys__input visually-hidden">
+                        <label for="radio-average" class="form-toys__label_amount">10-20</label>
+                    </li>
+                    <li class="form-toys__amount_item">
+                        <input id="radio-max" type="radio" name="report-amount" value="20-50" class="form-toys__input visually-hidden">
+                        <label for="radio-max" class="form-toys__label_amount">20-50</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit" class="form-toys__button btn">Apply</button>
+    </div>
+</form>

@@ -1,0 +1,558 @@
+@keyframes car {
+    0%{
+        opacity: 0;
+        left: 0%;
+    }
+    5%{
+        opacity: 1;
+        left: 5%;
+    }
+    50%{
+        opacity: 1;
+        left: 50%;
+    }
+    100%{
+        opacity: 0;
+        left: 98%;
+    }
+ }
+
+ @keyframes taxi{
+    0%{
+        opacity: 0;
+        left: 98%;
+    }
+    5%{
+        opacity: 1;
+        left: 97%;
+    }
+    50%{
+        opacity: 1;
+        left: 50%;
+        animation-delay: 3s;
+    }
+    99%{
+        opacity: 1;
+        left: -60%;
+    }
+    100%{
+        opacity: 0;
+        left: -64%;
+    }
+ }
+
+ @keyframes message{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+ }
+
+ @keyframes hand{
+    0%{
+        transform: rotate(153deg);
+    }
+
+    50%{
+        top: 77px;
+        left: 68px;
+        transform: rotate(0deg);
+    }  
+
+    100%{
+        transform: rotate(153deg);
+    }
+ }
+ 
+ .title {
+    margin-top: 46px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.animation{
+    max-width: 375px;
+    margin-top: 20px;
+    background-position: center;
+
+    &__clouds{
+        width: 100%;
+        align-items: center;
+    }
+    &__wrapper{
+        width: 375px;
+        height: 206px;
+        position: relative;
+        background-image: url("/static/images/animation/fon-mobile.jpg");
+        background-repeat: repeat-x;
+        background-position: center;
+    }
+    &__car_one{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        opacity: 0;
+        animation: car 10s linear 0s infinite forwards;
+    }
+    &__car_two{
+        position: absolute;
+        top:100px;
+        left: 0;
+        opacity: 0;
+        animation: car 10s linear 2.5s infinite forwards;
+    }
+    &__car_three{
+        position: absolute;
+        top:106px;
+        left: 0%;
+        opacity: 0;
+        animation: car 10s linear 5s infinite forwards;
+    }
+    &__car_four{
+        position: absolute;
+        top: 96px;
+        left: 0%;
+        opacity: 0;
+        animation: car 10s linear 7.5s infinite forwards;
+    }
+    &__lanterns_one {
+        position: absolute;
+        top: 35px;
+        left: 117px;
+    }
+    &__lanterns_two {
+        position: absolute;
+        top: 35px;
+        right: -12px;
+    }
+
+    &__lanterns_black {
+        position: absolute;
+        top: 36px;
+        left: 250px;
+        z-index: 1;
+    }
+    &__woman{
+        position: absolute;
+        top: 111px;
+        left: 37px;
+        z-index: 2;
+    }
+
+    &__body{
+        position: absolute;
+        top: 88px;
+        left: 68px;
+        z-index: 1;
+    }
+    &__hand{
+        position: absolute;
+        top: 60px;
+        left: 70px;
+        transition-delay: 5s;
+        transform-origin: left bottom;
+        transform: rotate(153deg);
+        animation: hand 15s linear infinite;
+        animation-fill-mode: both;
+        z-index: 1;
+    }
+
+    &__taxi{
+        position: absolute;
+        top: 46%;
+        left: 100%;
+        animation: taxi 17s linear 0s infinite forwards;
+    }
+
+    &__message{
+        position: absolute;
+        background-repeat: no-repeat;
+        background-image: url('/static/images/animation/Message-mobile.png');
+        opacity: 1;
+    }
+        .message_one{
+            font-size: 6px;
+            line-height: 8px;
+            padding: 5px 10px;
+            height: 34px;
+            width: 54px;
+            top: 78px;
+            left: 11px;
+            animation: message 15s infinite backwards;
+        }
+        .message_two{
+            font-size: 6px;
+            line-height: 8px;
+            padding: 9px 8px;
+            width: 48px;
+            height: 25px;
+            top: 52px;
+            left: 39px;
+            animation: message 15s 2s infinite backwards;
+        }
+        .message_three{
+            font-size: 6px;
+            line-height: 8px;
+            padding: 5px 8px;
+            width: 48px;
+            height: 25px;
+            top: 70px;
+            left: 220px;
+            animation: message 15s 5s infinite backwards;
+        }
+        .message_four{
+            font-size: 6px;
+            line-height: 8px;
+            padding: 5px 11px;
+            width: 48px;
+            height: 25px;
+            top: 52px;
+            left: 39px;
+            animation: message 15s 8s infinite backwards;
+        }
+
+    
+}
+
+
+@media (min-width: 768px) and (max-width:1023px){    
+    @keyframes hand{
+        0%{
+            transform: rotate(153deg);
+        }
+    
+        50%{
+            top: 167px;
+            left: 112px;
+            transform: rotate(0deg);
+        }  
+    
+        100%{
+            transform: rotate(153deg);
+        }
+     }
+   
+    .title{
+    max-width: 648px;
+    margin: 70px auto 0;
+    font-size: 36px;
+    line-height: 44px;
+   }
+   .animation{
+    max-width: 768px;
+    &__wrapper{
+        width: 100%;
+        height: 422px;
+        position: relative;
+        background-image: url("/static/images/animation/fon-tablet.jpg");
+        background-repeat: repeat-x;
+        background-position: center;
+    }
+    &__car_one{
+        position: absolute;
+        top: 209px;
+        left: 0;
+        opacity: 0;
+        animation: car 10s linear 0s infinite forwards;
+    }
+    &__car_two{
+        position: absolute;
+        top: 203px;
+        left: 0;
+        opacity: 0;
+        animation: car 10s linear 2.5s infinite forwards;
+    }
+    &__car_three{
+        position: absolute;
+        top:213px;
+        left: 0%;
+        opacity: 0;
+        animation: car 10s linear 5s infinite forwards;
+    }
+    &__car_four{
+        position: absolute;
+        top: 194px;
+        left: 0%;
+        opacity: 0;
+        animation: car 10s linear 7.5s infinite forwards;
+    }
+    &__lanterns_one {
+        position: absolute;
+        top: 75px;
+        left: 117px;
+    }
+    &__lanterns_two {
+        position: absolute;
+        top: 75px;
+        right: -12px;
+    }
+    &__lanterns_black {
+        position: absolute;
+        top: 73px;
+        left: 537px;
+        z-index: 1;
+    }
+    &__woman{
+        position: absolute;
+        top: 237px;
+        left: 55px;
+        z-index: 2;
+    }
+    &__body{
+        position: absolute;
+        top: 192px;
+        left: 110px;
+        z-index: 1;
+    }
+    &__hand{
+        position: absolute;
+        top: 145px;
+        left: 112px;
+        transition-delay: 5s;
+        transform-origin: left bottom;
+        transform: rotate(153deg);
+        animation: hand 15s linear infinite;
+        animation-fill-mode: both;
+        z-index: 1;
+    }
+    &__message{
+        position: absolute;
+        background-repeat: no-repeat;
+        background-image: url('/static/images/animation/Message-tablet.png');
+        opacity: 1;
+    }    
+    .message_one{
+        font-size: 10px;
+        line-height: 14px;
+        padding: 5px 10px;
+        height: 46px;
+        width: 86px;
+        top: 181px;
+        left: 21px;
+        animation: message 15s infinite backwards;
+    }
+    .message_two{
+        font-size: 10px;
+        line-height: 14px;
+        padding: 13px 8px;
+        width: 95px;
+        height: 35px;
+        top: 140px;
+        left: 79px;
+        animation: message 15s 2s infinite backwards;
+    }
+    .message_three{
+        font-size: 10px;
+        line-height: 14px;
+        padding: 6px 8px;
+        width: 85px;
+        height: 47px;
+        top: 162px;
+        left: 510px;
+        animation: message 15s 5s infinite backwards;
+    }
+    .message_four{
+        font-size: 10px;
+        line-height: 14px;
+        padding: 13px 8px;
+        width: 95px;
+        height: 35px;
+        top: 140px;
+        left: 79px;
+        animation: message 15s 8s infinite backwards;
+    }    
+    }
+}
+
+
+@media (min-width: 1024px) {
+    @keyframes hand{
+            0%{
+                transform: rotate(153deg);
+            }
+        
+            50%{
+                top: 197px;
+                left: 267px;
+                transform: rotate(0deg);
+            }  
+        
+            100%{
+                transform: rotate(153deg);
+            }
+         }
+       
+    .title{
+        max-width: 1180px;
+        padding-left: 40px;
+        margin: 60px auto 0;
+        font-size: 40px;
+        line-height: 49px;
+    }
+    .animation{
+        width: 1400px;
+        height: 100%;
+        background-position: center;
+    
+        &__clouds{
+            width: 1400px;
+            align-items: center;
+        }
+        &__wrapper{
+            width: 1400px;
+            height: 630px;
+            position: relative;
+            background-image: url("/static/images/animation/fon.jpg");
+            background-repeat: repeat-x;
+            background-position: center;
+        }
+        &__car_one{
+            position: absolute;
+            width: 250px;
+            height: 99px;
+            top: 300px;
+            left: 0%;
+            opacity: 0;
+            animation: car 10s linear 0s infinite forwards;
+        }
+        &__car_two{
+            position: absolute;
+            width: 203px;
+            height: 95px;
+            top:300px;
+            left: 0;
+            opacity: 0;
+            animation: car 10s linear 2.5s infinite forwards;
+        }
+        &__car_three{
+            position: absolute;
+            width: 246px;
+            height: 67px;
+            top:335px;
+            left: 0%;
+            opacity: 0;
+            animation: car 10s linear 5s infinite forwards;
+        }
+        &__car_four{
+            position: absolute;
+            width: 263px;
+            height: 120px;
+            top: 285px;
+            left: 0%;
+            opacity: 0;
+            animation: car 10s linear 7.5s infinite forwards;
+        }
+        &__lanterns_one {
+            position: absolute;
+            top: 49px; 
+            left: 437px;
+        }
+    
+        &__lanterns_two {
+            position: absolute;
+            top: 49px; 
+            right: -40px;
+        }
+    
+        &__lanterns_black {
+            position: absolute;
+            top: 32px; 
+            left: 1037px;
+            z-index: 1;
+        }
+    
+        &__woman{
+            position: absolute;
+            top: 323px;
+            left: 156px;
+            z-index: 1;
+        }
+    
+        &__body{
+            position: absolute;
+            top: 238px;
+            left: 266px;
+            z-index: 2;
+        }
+    
+        &__hand{
+            position: absolute;
+            top: 159px;
+            left: 280px;
+            transition-delay: 5s;
+            transform-origin: left bottom;
+            transform: rotate(153deg);
+            animation: hand 15s linear infinite;
+            animation-fill-mode: both;
+            z-index: 1;
+        }
+    
+        &__taxist{
+            position: absolute;
+            top: 46%;
+            left: 100%;
+            animation: taxi 17s linear 0s infinite forwards;
+        }
+    
+        &__message{
+            position: absolute;
+            background-repeat: no-repeat;
+            background-image: url('/static/images/animation/Message.png');
+            opacity: 0;
+        }
+    
+        .message_one{
+            font-size: 16px;
+            line-height: 22px;
+            padding: 17px;
+            width: 161px;
+            height: 99px;
+            top:  235px;
+            left: 96px;
+            animation: message 15s infinite backwards;
+            
+        }
+        
+        .message_two{
+            font-size: 16px;
+            line-height: 22px;
+            padding: 17px;
+            width: 161px;
+            height: 99px;
+            top: 150px;
+            left: 210px;
+            animation: message 15s 2s infinite backwards;
+            
+        }
+        
+        .message_three{
+            font-size: 16px;
+            line-height: 22px;
+            padding: 14px 12px;
+            width: 161px;
+            height: 99px;
+            top: 222px;
+            left: 979px;
+            animation: message 15s 6s infinite backwards;
+            
+        }
+        .message_four{
+            font-size: 16px;
+            line-height: 22px;
+            padding: 17px;
+            width: 161px;
+            height: 99px;
+            top: 150px;
+            left: 210px;
+            animation: message 15s 8s infinite backwards;
+            
+        }
+    }
+   
+}
+

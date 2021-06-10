@@ -1,0 +1,33 @@
+.title {
+    margin-top: 56px;
+    padding-left: 20px;
+    line-height: 49px;
+}
+
+svg {
+    margin-top: 50px;
+    transition: .4s;
+    .svg__circle, 
+    .svg__line_long,
+    .svg__line_short{
+        transition: .4s;
+    }    
+    &:hover{
+        .svg__circle{
+            transform: translateX(112px);
+        }
+        .svg__line_long{
+            transform: translate(-9px, -227px);
+            stroke-width: 25px;
+            stroke-dasharray: 50px;
+        }
+        .svg__line_short{
+            transform: translate(9px, -109px);
+            stroke-width: 25px;
+            stroke-dasharray: 50px;
+        }
+    }
+    &:active{
+        transform: rotate(180deg);
+    }
+}

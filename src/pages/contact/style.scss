@@ -1,0 +1,102 @@
+.title {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    max-width: 335px;
+    &-info {
+        margin-top: 25px;
+        max-width: 335px;
+        text-align: center;
+        margin-bottom: 25px;
+        &__desc {
+            font-size: 14px;
+            line-height: 19px;
+            padding-bottom: 15px;
+        }
+        &__text{
+            font-family: 'Montserrat', 'Calibri',  sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 34px;
+            text-transform: uppercase;
+            color: #C29974;
+        }
+    }  
+}  
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .title{
+        margin-top: 35px;
+        font-size: 36px;
+        line-height: 44px;
+        max-width: 648px;
+        margin: 35px auto 0;
+    }
+
+    .contact{
+        min-width: 648px;
+        margin: 0 auto;
+        text-align:center;
+        &-info{
+            margin-top: 45px;
+            max-width: 356px;
+            text-align: center;
+            margin-bottom: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            &__desc {
+                font-size: 16px;
+                line-height: 22px;
+                padding-bottom: 20px;
+            }
+            &__text{
+                font-size: 26px;
+                line-height: 34px;
+            }
+        }
+    }
+}
+
+  @media (min-width:1024px){
+    .title{
+        margin-top: 56px;
+        font-size: 40px;
+        line-height: 49px;
+        max-width: 1180px;
+        padding-left: 20px;
+        margin: 56px auto 0;
+    }
+
+    .contact{
+        max-width: 1180px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+        padding-left: 20px;
+        margin-bottom: 60px;
+        &-info{
+            margin-top: 45px;
+            max-width: 380px;
+            text-align: left;
+            margin-bottom: 25px;
+            &__desc {
+                font-size: 16px;
+                line-height: 22px;
+                padding-bottom: 20px;
+            }
+            &__text{
+                font-size: 26px;
+                line-height: 34px;
+            }
+        }
+    }
+  }

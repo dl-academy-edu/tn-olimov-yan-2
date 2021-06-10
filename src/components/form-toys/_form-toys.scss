@@ -1,0 +1,519 @@
+.form-toys {
+    max-width: 375px;
+    margin-top: 20px;
+    background-color: rgba(125, 151, 218, 0.2);
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 335px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border: 0px;
+    }
+    &__field{
+        max-width: 202px;
+        margin-left: 0px;
+        padding: 0px;
+        border: 0px;
+        &:nth-child(2){
+            margin-top: 25px;
+            margin-left: 0px;
+            margin-right: 111px;
+            min-width: 65px;
+            padding: 0px;
+            border: 0px;
+        }
+        &:nth-child(3){
+            margin-top: 25px;
+            margin-left: 0px;
+            max-width: 112px;
+            padding: 0px;
+            border: 0px;
+        }
+        &:nth-child(4){
+            margin-top: 25px;
+            margin-left: 0px;
+            margin-right: 60px;
+            min-width: 131px;
+            padding: 0px;
+            border: 0px;
+        }    
+        &__text{
+            display: flex;
+            max-width: 202px;
+        }
+        &__desc{
+            margin-top: 11px;
+            margin-right: 169px;
+            font-size: 14px;
+            line-height: 19px;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+    &__input_range{
+        margin-top: 20px;
+        margin-left: 5px;
+        appearance: none;
+        width: 184px;
+        height: 4px;
+        background-color: #C29974;
+        &::-webkit-slider-thumb{
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            background-image: url('/static/images/Point.svg');
+        }
+    }
+    &__legend{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        color: #1E0606;
+    }
+    &__input{
+        margin-top: 15px;
+        transition: 0.4s;
+        &:checked + .form-toys__label::after{
+            opacity: 1;
+        }
+        &:disabled + .form-toys__label{
+            opacity: 0.5;
+            cursor: default;
+        } 
+        &:checked + .form-toys__label_delivery::after {
+            opacity: 1;
+        }
+        &:disabled + .form-toys__label_delivery{
+            opacity: 0.5;
+            cursor: default;
+        } 
+        &:checked +  .form-toys__label_amount::after{
+            opacity: 1;
+        }
+        &:disabled + .form-toys__label_amount::after{
+            opacity: 0.5;
+            background-color: #C1C1C1;
+            cursor: default;
+        }
+        &:disabled + .form-toys__label_amount{
+            color: #908484;
+            cursor: default;
+        }
+    }
+    &__color_item {
+        margin-top: 10px;
+    }
+    &__label {
+        position: relative;
+        margin-left: 24px;
+        font-size: 14px;
+        line-height: 19px;
+        transition: 0.4s;
+        &::before{
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 0px;
+            width: 17px;
+            height: 17px;
+            border: 2px solid #C29974;
+            box-sizing: border-box;
+            border-radius: 3px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            left: -23px;
+            top: 0px;
+            width: 15px;
+            height: 15px;
+            background-image: url('/static/images/CheckmarkToys.svg');
+            background-repeat: no-repeat;
+            opacity: 0;
+        }
+        &:hover{
+            text-decoration-line: underline;
+            cursor: pointer;
+        }
+    }
+    &__delivery_list{
+        margin-top: 0px;
+    }
+    &__delivery_item{
+        margin-top: 12px;
+        max-width: 112px;
+    }
+    &__label_delivery {
+        position: relative;
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 23px;
+        transition: 0.4s;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: -24px;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #C29974;
+            box-sizing: border-box;
+            border-radius: 50%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: -21px;
+            width: 10px;
+            height: 10px;
+            background-color: #C29974;
+            border-radius: 50%;
+            opacity: 0;
+        }
+        &:hover{
+            text-decoration-line: underline;
+            cursor: pointer;
+        }
+    }
+    &__amount_list{
+        display: flex;
+        margin-top: 10px;
+        min-width: 240px;
+    }
+    &__amount_item{
+        position: relative;
+        width: 80px;
+        padding-top: 6px;
+        padding-bottom: 7px;
+        text-align: center;
+        background-color: #FFFFFF;
+        z-index: 1;
+        transition: 0.4s;
+        &:hover{
+            color:#877379;
+            background-color: #EDDEEB;
+        } 
+    }
+    &__label_amount{
+        font-size: 14px;
+        line-height: 19px;
+        transition: 0.4s;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 80px;
+            height: 35px;
+            background-color: #F3D0DB;
+            z-index: -1;
+            opacity: 0;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__button{
+        margin: 25px auto 0;
+        width: 96px;
+        height: 40px;
+    }
+}
+
+input:focus + label {
+    outline-color: #000000;
+    outline-offset: 3px;
+    outline-style: auto;
+    outline-width: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .form-toys{
+        min-width: 768px;
+        &__wrap {
+            max-width: 648px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            border: 0px;
+        }
+        &__field{
+            margin-right: 76px;
+            &:nth-child(2){
+                margin-top: 0px;
+                margin-left: 0px;
+                margin-right: 98px;
+                min-width: 75px;
+            }
+            &:nth-child(3){
+                margin-top: 0px;
+                margin-left: 0px;
+                max-width: 131px;
+                padding: 0px;
+                border: 0px;
+            }
+            &:nth-child(4){
+                margin-top: 21px;
+                margin-left: 0px;
+                margin-right: 208px;
+                min-width: 240px;
+                padding: 0px;
+                border: 0px;
+            }    
+            &__text{
+                display: flex;
+                max-width: 202px;
+               
+            }
+            &__desc{
+                margin-top: 11px;
+                margin-right: 169px;
+                font-size: 16px;
+                line-height: 22px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+        &__legend{
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__input_range{
+            margin-top: 25px;
+        }  
+        &__color_item {
+            margin-top: 15px;
+        }
+        &__label {
+            position: relative;
+            margin-left: 29px;
+            font-size: 16px;
+            line-height: 22px;
+            transition: 0.4s;
+            &::before{
+                content: '';
+                position: absolute;
+                left: -29px;
+                top: 0px;
+                width: 19px;
+                height: 19px;
+                border: 2px solid #C29974;
+                box-sizing: border-box;
+                border-radius: 3px;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                left: -26px;
+                top: 1px;
+                width: 15px;
+                height: 15px;
+                background-image: url('/static/images/CheckmarkToys.svg');
+                background-repeat: no-repeat;
+                opacity: 0;
+            }
+        }
+        &__delivery_list{
+            margin-top: 5px;
+        }
+        &__delivery_item{
+            margin-top: 10px;
+            max-width: 131px;
+        }
+        &__label_delivery {
+            position: relative;
+            font-size: 16px;
+            line-height: 22px;
+            margin-left: 30px;
+            transition: 0.4s;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: -30px;
+                width: 20px;
+                height: 20px;
+                border: 2px solid #C29974;
+                box-sizing: border-box;
+                border-radius: 50%;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 4px;
+                left: -26px;
+                width: 12px;
+                height: 12px;
+                background-color: #C29974;
+                border-radius: 50%;
+                opacity: 0;
+            }
+        }
+        &__amount_list{
+            display: flex;
+            margin-top: 15px;
+            min-width: 240px;
+        }
+        &__amount_item{
+            padding-top: 7px;
+            padding-bottom: 6px;
+        }
+        &__label_amount{
+            font-size: 16px;
+            line-height: 22px;
+            transition: 0.4s;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 80px;
+                height: 35px;
+                background-color: #F3D0DB;
+                z-index: -1;
+                opacity: 0;
+            }
+        }
+        &__button{
+            margin: 53px auto 0;
+            width: 96px;
+            height: 40px;
+        }
+         
+    }
+}
+
+@media (min-width: 1024px){
+    .form-toys{
+        max-width: 100%;
+        &__wrap {
+            max-width: 1118px;
+            padding: 42px 0;
+            border: 0px;
+        }
+        &__field{
+            margin-right: 76px;
+            &:nth-child(2){
+                margin-top: 0px;
+                margin-left: 0px;
+                margin-right: 98px;
+                min-width: 75px;
+            }
+            &:nth-child(3){
+                margin-top: 0px;
+                margin-left: 0px;
+                max-width: 131px;
+            }
+            &:nth-child(4){
+                margin-top: 0px;
+                margin-right: 60px;
+            }    
+            &__text{
+                display: flex;
+                max-width: 202px;
+            }
+            &__desc{
+                margin-top: 11px;
+                margin-right: 169px;
+                font-size: 16px;
+                line-height: 22px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+        &__legend{
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__input_range{
+            margin-top: 25px;
+        }  
+        &__color_item {
+            margin-top: 15px;
+        }
+        &__label {
+            position: relative;
+            margin-left: 29px;
+            font-size: 16px;
+            line-height: 22px;
+            transition: 0.4s;
+            &::before{
+                content: '';
+                position: absolute;
+                left: -29px;
+                top: 0px;
+                width: 19px;
+                height: 19px;
+                border: 2px solid #C29974;
+                box-sizing: border-box;
+                border-radius: 3px;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                left: -26px;
+                top: 1px;
+                width: 15px;
+                height: 15px;
+                background-image: url('/static/images/CheckmarkToys.svg');
+                background-repeat: no-repeat;
+                opacity: 0;
+            }
+        }
+        &__delivery_list{
+            margin-top: 5px;
+        }
+        &__delivery_item{
+            margin-top: 10px;
+            max-width: 131px;
+        }
+        &__label_delivery {
+            position: relative;
+            font-size: 16px;
+            line-height: 22px;
+            margin-left: 30px;
+            transition: 0.4s;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: -30px;
+                width: 20px;
+                height: 20px;
+                border: 2px solid #C29974;
+                box-sizing: border-box;
+                border-radius: 50%;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 4px;
+                left: -26px;
+                width: 12px;
+                height: 12px;
+                background-color: #C29974;
+                border-radius: 50%;
+                opacity: 0;
+            }
+        }
+        &__amount_list{
+            margin-top: 15px;
+        }
+        &__amount_item{
+            padding-top: 7px;
+            padding-bottom: 6px;
+        }
+        &__label_amount{
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__button{
+            margin-top:36px;
+        }
+    }
+}
