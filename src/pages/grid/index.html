@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/fonts.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid</title>
+    <meta name="description" content="Creating a grid using CSS Grid">
+  </head>
+  <body>
+    @@include('header/index.html')
+    <main>
+      <div class="container">
+        <h1 class="title caption">GRID</h1>
+        <ul class="breadcrumbs list">
+          @@include('breadcrumbs/breadcrumbs-card-active.html', {
+            "href":"/pages/main/index.html",
+            "text":"Home"
+          })
+          @@include('breadcrumbs/index.html', {
+            "text":"Grid"
+          })
+        </ul>
+      </div>
+      <section class="grid">
+        <h2 class="visually-hidden">Grid</h2>
+        <div class="grid__blok_1">
+          <div class="grid__container">
+            <div class="grid__wrapper">
+              <p class="grid__text text_grey">IPHONE 6S</p>
+              <p class="grid__desc">3D Touch. 12MP photos. 4K video. One powerful phone</p>
+              <p class="grid__txt">Learn more or visit an Apple Store today</p>
+            </div>
+            <picture>
+              <source srcset="/static/images/grid/phone-mobile.png, /static/images/grid/phone-mobile2x.png 2x" media="(max-width: 767px)">
+              <source srcset="/static/images/grid/phone-tablet.png, /static/images/grid/phone-tablet2x.png 2x" media="(max-width: 1023px)">
+              <source srcset="/static/images/grid/phone.png, /static/images/grid/phone2x.png 2x" media="(min-width: 1024px)">
+              <img src="/static/images/grid/phone.png" alt="phone">
+            </picture>
+          </div>
+        </div>
+        <div class="grid__blok_2">
+          <div class="grid__wrap">
+            <a href="#" class="grid__text">LEARN MORE</a>
+            <p class="grid__caption">How to Use Rotary Evaporator in Chemical Labs</p>
+            <a href="#" class="grid__txt grid__link_underline">Download now</a>
+          </div>
+          
+        </div>
+        <div class="grid__blok_3">
+          <div class="grid__box">
+            <picture>
+              <source srcset="/static/images/grid/keywords-mobile.png, /static/images/grid/keywords-mobile2x.png 2x" media="(max-width: 767px)">
+              <source srcset="/static/images/grid/keywords-tablet.png, /static/images/grid/keywords-tablet2x.png 2x" media="(max-width: 1023px)">
+              <source srcset="/static/images/grid/keywords.png, /static/images/grid/keywords2x.png 2x" media="(min-width: 1024px)">
+              <img src="/static/images/grid/keywords.png" alt="keywords">
+            </picture>
+            <p class="grid__desc text-white">Our Brand New Keyboard</p>
+            <a href="#" class="grid__text link_yellow">Learn ></a>
+          </div>
+        </div>
+        <div class="grid__blok_4">
+          <div class="grid__content">
+            <div class="grid__holder">
+              <p class="grid__text">IMAC.RETINA</p>
+              <p class="grid__desc">Hardly a month passes these days where</p>
+              <picture>
+                <source srcset="/static/images/grid/monitor-mobile.png, /static/images/grid/monitor-mobile2x.png 2x" media="(max-width: 767px)" >
+                <source srcset="/static/images/grid/monitor-tablet.png, /static/images/grid/monitor-tablet2x.png 2x" media="(max-width: 1023px)" >
+                <source srcset="/static/images/grid/monitor.png, /static/images/grid/monitor2x.png 2x" media="(min-width: 1024px)">
+                <img src="/static/images/grid/monitor.png" alt="monitor">
+              </picture>
+            </div>
+            <div class="grid__holder">
+              <p class="grid__txt">Apple may be experimenting in the virtual reality space. The company has been granted a patent for a head-mounted virtual reality device that would use the iPhone screen as the display.</p>
+              <a href="#" class="grid__link">DOWNLOAD NOW ›</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid__blok_5">
+          <div class="grid__img-wrapper">
+            <p class="img-wrapper__text">POPULAR</p>
+            <div class="img-wrapper__img">
+              <picture>
+                <source srcset="/static/images/grid/discette-mobile.png, /static/images/grid/discette-mobile2x.png 2x" media="(max-width: 767px)">
+                <source srcset="/static/images/grid/discette-tablet.png, /static/images/grid/discette-tablet2x.png 2x" media="(max-width: 1023px)">
+                <source srcset="/static/images/grid/discette.png, /static/images/grid/discette2x.png 2x" media="(min-width: 1024px)">
+                <img src="/static/images/grid/discette.png" alt="discette">
+              </picture>
+            </div>
+            <p class="img-wrapper__text">MEET</p>
+          </div>
+          <p class="grid__subtitle">iCloud</p>
+          <p class="grid__txt">With iCloud, you always have the latest versions of your most important things — like documents, apps, notes, and contacts — on whatever device you’re using.</p>
+          <a href="#" class="grid__button">LEARN MORE</a>
+        </div>
+        <div class="grid__blok_6">
+          <p class="grid__desc grid__desc_white">Much MuchBetter Experience</p>
+            <picture>
+              <source srcset="/static/images/grid/laptop-mobile.png, /static/images/grid/laptop-mobile2x.png 2x" media="(max-width: 767px)">
+              <source srcset="/static/images/grid/laptop-tablet.png, /static/images/grid/laptop-tablet2x.png 2x" media="(max-width: 1023px)">
+              <source srcset="/static/images/grid/laptop.png, /static/images/grid/laptop2x.png 2x" media="(min-width: 1024px)">
+              <img src="/static/images/grid/laptop.png" alt="laptop">
+            </picture>
+        </div>
+        <div class="grid__blok_7">
+          <picture>
+            <source srcset="/static/images/grid/games-mobile.png, /static/images/grid/games-mobile2x.png 2x" media="(max-width: 767px)">
+            <source srcset="/static/images/grid/games-tablet.png, /static/images/grid/games-tablet.png 2x" media="(max-width: 1023px)">
+            <source srcset="/static/images/grid/games.png, /static/images/grid/games2x.png 2x" media="(min-width: 1024px)">
+            <img src="/static/images/grid/games.png" alt="joystick">
+          </picture>
+          <p class="grid__desc">Games ourpasion</p>
+          <a href="#" class="grid__link">LEARN ›</a>
+        </div>
+        <div class="grid__blok_8">
+          <picture>
+            <source srcset="/static/images/grid/icon-mobile.png, /static/images/grid/icon-mobile2x.png 2x" media="(max-width: 767px)">
+            <source srcset="/static/images/grid/icon-tablet.png, /static/images/grid/icon-tablet2x.png 2x" media="(max-width: 1023px)">
+            <source srcset="/static/images/grid/icon.png, /static/images/grid/icon2x.png 2x" media="(min-width: 1024px)">
+            <img src="/static/images/grid/icon.png" alt="social network icon">
+          </picture>
+          <a href="#" class="grid__desc">Follow me ›</a>
+        </div>
+        <div class="grid__blok_9">
+          <picture>
+            <source srcset="/static/images/grid/TV-mobile.png, /static/images/grid/TV-mobile2x.png 2x" media="(max-width: 767px)">
+            <source srcset="/static/images/grid/TV-tablet.png, /static/images/grid/TV-tablet2x.png 2x" media="(max-width: 1023px)">
+            <source srcset="/static/images/grid/TV.png, /static/images/grid/TV2x.png 2x" media="(min-width: 1024px)">
+            <img src="/static/images/grid/TV.png" alt="TV">
+          </picture>
+          <p class="grid__desc">More than just a display,  it’s a vision</p>
+        </div>
+      </section>
+  </main>
+    @@include('footer/index.html')
+    <script src="/pages/grid/scripts.js"></script>
+  </body>
+</html>

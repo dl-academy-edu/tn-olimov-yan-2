@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/fonts.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <meta name="description" content="Blog">
+  </head>
+  <body>
+    @@include('header/index.html')
+    <main>
+      <div class="container">
+        <h1 class="title caption">Blog</h1>
+        <ul class="breadcrumbs list">
+            @@include('breadcrumbs/breadcrumbs-card-active.html', {
+                "href":"/pages/main/index.html",
+                "text":"Home"
+              })
+              @@include('breadcrumbs/index.html', {
+                "text":"Blog"
+              })
+        </ul>
+        @@include('blog/index.html')
+    </div>
+    </main>
+    @@include('footer/index.html')
+    <script src="/pages/blog/scripts.js"></script>
+  </body>
+  </html>
+

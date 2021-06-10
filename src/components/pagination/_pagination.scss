@@ -1,0 +1,111 @@
+button {
+    border: 0;
+    background: transparent;
+}
+
+
+.pagination{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    max-width: 329px;
+    &__list{
+        display: flex;
+        max-width: 188px;
+    }
+    &__control_back{
+        padding: 0px;
+        cursor: pointer;
+        &:hover path{
+            fill: #C29974;
+        }
+        &:active path{
+            fill: #C29974;
+            opacity: 0.5;
+        }        
+    }
+    &__control_back path{
+        fill:  rgba(30, 6, 6, 0.12);
+    }
+    &__item{
+        margin-right: 52px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+    &__button_active{
+        color: #C29974;
+    }
+    &__button{
+        padding: 0px;
+        font-family: 'Montserrat', 'Calibri',  sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+    &__control_forward{
+        padding: 0px;
+        &:hover path{
+            cursor: pointer;
+            fill: #C29974;
+        }
+        &:active path{
+            cursor: pointer;
+            fill: #C29974;
+            opacity: 0.5;
+        }
+    }
+    &__control_forward path{
+        fill:  rgba(30, 6, 6, 0.12);
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .pagination{
+        max-width: 642px;
+        margin: 30px auto 50px;
+        &__list{
+            max-width: 234px;
+        }
+        &__item{
+            margin-right: 67px;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+        &__button{
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .pagination{
+        max-width: 1174px;
+        margin: 30px auto 0;
+        margin-bottom: 60px;
+        &__list{
+            max-width: 234px;
+        }
+        &__item{
+            margin-right: 67px;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+        &__button{
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

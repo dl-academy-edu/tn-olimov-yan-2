@@ -1,0 +1,74 @@
+body {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+.list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1, h2, p, span {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1220px;
+  padding: 0 20px;
+}
+
+.caption {
+  font-family: 'Montserrat', 'Calibri', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: 'Crimson Text', 'Book Antiqua', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+// Подключение компонентов
+@import "./header/header";
+@import "./button/button";
+@import "./products/products";
+@import "./delivery/delivery";
+@import "./partners/partners";
+@import "./info/info";
+@import "./breadcrumbs/breadcrumbs";
+@import "./catalog/catalog";
+@import "./product/product";
+@import "./pagination/pagination";
+@import "./blog/blog";
+@import "./form-toys/form-toys";
+@import "./toys/toys";
+@import "./form/form";
+@import "./popup/popup";
+@import "./footer/footer";
+@import "./star/star";

@@ -1,0 +1,194 @@
+.toys{
+    max-width: 335px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 71px;
+        max-width: 335px;
+    }
+    &__item{
+        position: relative;
+        max-width: 160px;
+        margin-top: 25px;
+        &:nth-child(1){
+            margin-top: 0px;
+        }
+        &:nth-child(2){
+            margin-top: 0px;
+        }
+        &:nth-child(2n){
+            max-width: 159px;
+        }
+    }
+    &__img{
+        max-width: 159px;
+
+    }
+    &__link {
+        max-width: 159px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #1E0606;
+        &:hover:before{
+            content: 'Learn more';
+            position: absolute;
+            padding-top: 41px;
+            top: 36px;
+            width: 100px;
+            height: 50px;
+            font-family: 'Montserrat', 'Calibri',  sans-serif;;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #1E0606;
+            background: #E5EAF8;
+            cursor: pointer;
+            opacity: 0.9;
+        }
+        &:active:before{
+            opacity: 0.67;
+        }
+    }
+    &__desc {
+        margin-top: 10px; 
+        font-size: 12px;
+        line-height: 16px;
+        min-height: 33px;
+    }
+    &__text {
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .toys{
+        max-width: 728px;
+        
+        &__list {
+            margin: 50px auto 0;
+            max-width: 648px;
+        }
+        &__item{
+            position: relative;
+            max-width: 203px;
+            margin-top: 30px;
+            &:nth-child(3){
+                margin-top: 0px;
+            }
+        }
+        &__img{
+            max-width: 203px;
+    
+        }
+        &__link {
+            max-width: 203px;
+            &:hover:before{
+                content: 'Learn more';
+                position: absolute;
+                padding-top: 46px;
+                padding-bottom: 20px;
+                top: 52px;
+                width: 130px;
+                font-size: 14px;
+                line-height: 19px;
+            }
+            &:active:before{
+                opacity: 0.67;
+            }
+        }
+        &__desc {
+            margin-top: 15px; 
+            font-size: 12px;
+            line-height: 16px;
+            min-height: 17px;
+        }
+        &__text {
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 19px;
+        }
+        
+    }
+}
+
+@media (min-width: 1024px){
+    .toys{
+        max-width: 1180px;
+        &__list {
+            margin: 50px auto 0;
+            max-width: 1180px;
+        }
+        &__item{
+            position: relative;
+            max-width: 380px;
+            margin-top: 30px;
+            margin-top: 20px;
+            margin-right: 20px;
+            &:nth-child(3n){
+                margin-right: 0px;
+            }
+            &:nth-child(2n){
+                max-width: 380px;
+            }
+            &:nth-of-type(4){
+                margin-top: 47px;
+            }
+            &:nth-of-type(5){
+                margin-top: 45px;
+            }
+            &:nth-of-type(6){
+                margin-top: 48px;
+            }
+        }
+        &__img{
+            max-width: 380px;
+    
+        }
+        &__link {
+            max-width: 380px;
+            &:hover:before{
+                content: 'Learn more';
+                position: absolute;
+                padding-left: 11px;
+                padding-top: 82px;
+                padding-bottom: 96px;
+                padding-right: 12px;
+                top: 89px;
+                left: 87px;
+                width: 207px;
+                font-size: 26px;
+                line-height: 29px;
+            }
+            &:active:before{
+                opacity: 0.67;
+            }
+        }
+        .toys__desc {
+            margin-top: 30px; 
+            font-size: 14px;
+            line-height: 19px;
+        }
+        
+        .toys__text {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        
+    }
+}

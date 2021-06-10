@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/fonts.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animation scene</title>
+    <meta name="description" content="Creating an animated scene">
+  </head>
+  <body>
+      @@include('header/index.html')
+      <main>
+        <div class="container">
+          <h1 class="title caption">Animation scene</h1>
+          <ul class="breadcrumbs list">
+            @@include('breadcrumbs/breadcrumbs-card-active.html', {
+                "href":"/pages/main/index.html",
+                "text":"Home"
+              })
+              @@include('breadcrumbs/index.html', {
+                "text":"Animation"
+              })
+          </ul>
+        </div>
+        <section class="animation">
+          <h2 class="visually-hidden">Animation scene</h2>
+          <div class="animation__clouds">
+            <picture>
+                <source srcset="/static/images/animation/Clouds-mobile.png, /static/images/animation/Clouds-mobile2x.png 2x" media="(max-width: 767px)">
+                <source srcset="/static/images/animation/Clouds-tablet.png, /static/images/animation/Clouds-tablet2x.png 2x" media="(max-width: 1023px)">
+                <source srcset="/static/images/animation/Clouds.png, /static/images/animation/Clouds2x.png 2x" media="(min-width: 1024px)">
+                <img src="/static/images/animation/Clouds.png" srcset="/static/images/animation/Clouds.png, /static/images/animation/Clouds2x.png 2x" alt="clouds and sun">
+            </picture>
+          </div>
+          <div class="animation__wrapper">
+            <div class="container">
+              <div class="animation__car_one">
+                <picture>
+                  <source srcset="/static/images/animation/Car1-mobile.png, /static/images/animation/Car1-mobile2x.png 2x" media="(max-width: 767px)">
+                  <source srcset="/static/images/animation/Car1-tablet.png, /static/images/animation/Car1-tablet2x.png 2x" media="(max-width: 1023px)">
+                  <source srcset="/static/images/animation/Car1.png, /static/images/animation/Car12x.png 2x" media="(min-width: 1024px)">
+                  <img src="/static/images/animation/Car1.png" srcset="/static/images/animation/Car1.png, /static/images/animation/Car12x.png 2x" alt="car">
+                </picture>
+              </div>
+              <div class="animation__car_two">
+                <picture>
+                  <source srcset="/static/images/animation/Car2-mobile.png, /static/images/animation/Car2-mobile2x.png 2x" media="(max-width: 767px)">
+                  <source srcset="/static/images/animation/Car2-tablet.png, /static/images/animation/Car2-tablet2x.png 2x" media="(max-width: 1023px)">
+                  <source srcset="/static/images/animation/Car2.png, /static/images/animation/Car22x.png 2x" media="(min-width: 1024px)">
+                  <img src="/static/images/animation/Car2.png" srcset="/static/images/animation/Car2.png, /static/images/animation/Car22x.png 2x" alt="car">
+                </picture>
+              </div>
+              <div class="animation__car_three">
+                <picture>
+                  <source srcset="/static/images/animation/Car3-mobile.png, /static/images/animation/Car3-mobile2x.png 2x" media="(max-width: 767px)">
+                  <source srcset="/static/images/animation/Car3-tablet.png, /static/images/animation/Car3-tablet2x.png 2x" media="(max-width: 1023px)">
+                  <source srcset="/static/images/animation/Car3.png, /static/images/animation/Car32x.png 2x" media="(min-width: 1024px)">
+                  <img src="/static/images/animation/Car3.png" srcset="/static/images/animation/Car3.png, /static/images/animation/Car32x.png 2x" alt="car">
+                </picture>
+              </div>
+              <div class="animation__car_four">
+                <picture>
+                  <source srcset="/static/images/animation/Car4-mobile.png, /static/images/animation/Car4-mobile2x.png 2x" media="(max-width: 767px)">
+                  <source srcset="/static/images/animation/Car4-tablet.png, /static/images/animation/Car4-tablet2x.png 2x" media="(max-width: 1023px)">
+                  <source srcset="/static/images/animation/Car4.png, /static/images/animation/Car42x.png 2x" media="(min-width: 1024px)">
+                  <img src="/static/images/animation/Car4.png" srcset="/static/images/animation/Car4.png, /static/images/animation/Car42x.png 2x" alt="car">
+                </picture>
+              </div>
+              <div class="animation__lanterns_one"> 
+                <picture>
+                  <source srcset="/static/images/animation/Lanterns-mobile.png, /static/images/animation/Lanterns-mobile2x.png 2x" media="(max-width: 767px)">
+                  <source srcset="/static/images/animation/Lanterns-tablet.png, /static/images/animation/Lanterns-tablet2x.png 2x" media="(max-width: 1023px)">
+                  <source srcset="/static/images/animation/Lanterns.png, /static/images/animation/Lanterns2x.png 2x" media="(min-width: 1024px)">
+                  <img src="/static/images/animation/Lanterns.png" srcset="/static/images/animation/Laterns.png, /static/images/animation/Lanterns2x.png 2x" alt="lanterns">
+                </picture>
+              </div>
+              <div class="animation__lanterns_two">
+                <picture>
+                  <source srcset="/static/images/animation/Lanterns-mobile.png, /static/images/animation/Lanterns-mobile2x.png 2x" media="(max-width: 767px)">
+                  <source srcset="/static/images/animation/Lanterns-tablet.png, /static/images/animation/Lanterns-tablet2x.png 2x" media="(max-width: 1023px)">
+                  <source srcset="/static/images/animation/Lanterns.png, /static/images/animation/Lanterns2x.png 2x" media="(min-width: 1024px)">
+                  <img src="/static/images/animation/Lanterns.png" srcset="/static/images/animation/Laterns.png, /static/images/animation/Lanterns2x.png 2x" alt="lanterns">
+                </picture>
+              </div>
+              <div class="animation__lanterns_black">
+                <picture>
+                  <source srcset="/static/images/animation/Lantern-mobile.png, /static/images/animation/Lantern-mobile2x.png 2x" media="(max-width: 767px)">
+                  <source srcset="/static/images/animation/Lantern-tablet.png, /static/images/animation/Lantern-tablet2x.png 2x" media="(max-width: 1023px)">
+                  <source srcset="/static/images/animation/Lantern.png, /static/images/animation/Lantern2x.png 2x" media="(min-width: 1024px)">
+                  <img src="/static/images/animation/Lantern.png" srcset="/static/images/animation/Lantern.png, /static/images/animation/Lantern2x.png 2x" alt="lanterns">
+                </picture>
+              </div>
+              <div class="animation__woman">
+                <picture>
+                  <source srcset="/static/images/animation/Woman-mobile.png, /static/images/animation/Woman-mobile2x.png 2x" media="(max-width: 767px)">
+                  <source srcset="/static/images/animation/Woman-tablet.png, /static/images/animation/Woman-tablet2x.png 2x" media="(max-width: 1023px)">
+                  <source srcset="/static/images/animation/Woman.png, /static/images/animation/Woman2x.png 2x" media="(min-width: 1024px)">
+                  <img src="/static/images/animation/Woman.png" srcset="/static/images/animation/Woman.png, /static/images/animation/Woman2x.png 2x" alt="woman and suitcases">
+                </picture>
+              </div>
+              <div class="animation__man">
+                <div class="animation__hand">
+                  <picture>
+                    <source srcset="/static/images/animation/Hand-mobile.png, /static/images/animation/Hand-mobile2x.png 2x" media="(max-width: 767px)">
+                    <source srcset="/static/images/animation/Hand-tablet.png, /static/images/animation/Hand-tablet2x.png 2x" media="(max-width: 1023px)">
+                    <source srcset="/static/images/animation/Hand.png, /static/images/animation/Hand2x.png 2x" media="(min-width: 1024px)">
+                    <img src="/static/images/animation/Hand.png" srcset="/static/images/animation/Hand.png, /static/images/animation/Hand2x.png 2x" alt="man's hand">
+                  </picture>
+                </div>
+                <div class="animation__body">
+                  <picture>
+                    <source srcset="/static/images/animation/Man-mobile.png, /static/images/animation/Man-mobile2x.png 2x" media="(max-width: 767px)">
+                    <source srcset="/static/images/animation/Man-tablet.png, /static/images/animation/Man-tablet2x.png 2x" media="(max-width: 1023px)">
+                    <source srcset="/static/images/animation/Man.png, /static/images/animation/Man2x.png 2x" media="(min-width: 1024px)">
+                    <img src="/static/images/animation/Man.png" srcset="/static/images/animation/Man.png, /static/images/animation/Man2x.png 2x" alt="man's body">
+                  </picture>
+                </div>
+              </div>     
+              <div class="animation__taxi">
+                <picture>
+                  <source srcset="/static/images/animation/Taxi-mobile.png, /static/images/animation/Taxi-mobile2x.png 2x" media="(max-width: 767px)">
+                  <source srcset="/static/images/animation/Taxi-tablet.png, /static/images/animation/Taxi-tablet2x.png 2x" media="(max-width: 1023px)">
+                  <source srcset="/static/images/animation/Taxi.png, /static/images/animation/Taxi2x.png 2x" media="(min-width: 1024px)">
+                  <img src="/static/images/animation/Taxi.png" srcset="/static/images/animation/Taxi.png, /static/images/animation/Taxi2x.png 2x" alt="taxi">
+                </picture>
+              </div>       
+              <div class="animation__message message_one">
+                  Джеси, смотри, такси едет!                  
+              </div>
+              <div class="animation__message message_two">
+                  Эй, такси, такси!                 
+              </div> 
+              <div class="animation__message message_three">
+                  Я вообще-то не за вами!                 
+              </div>
+              <div class="animation__message message_four">
+                  Окей, ждём ещё.                 
+              </div> 
+            </div> 
+          </div> 
+        </section>
+      </main>
+      @@include('footer/index.html')
+      <script src="/pages/animation/scripts.js"></script>
+</body>
+</html>
